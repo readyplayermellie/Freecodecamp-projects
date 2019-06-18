@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Melanie de Leeuw">
+        <meta name="description" content="The survey form for the FreeCodeCamp.org Responsive Certificate">
+
+        <link rel="stylesheet" type="text/css" href="survey-style.css"> 
+        <title>Survey form</title>
+    </head>
+
+    <body>
+        <div id="form-div">
+
+            <h1 id="title">Totally real survey form</h1>
+            <p id="description">So let's all pretend your opinion actually matters</p>
+
+            <form id="survey-form">
+                <label for="name" id="name-label">Name </label>
+                <input type="text" id="name" autocomplete="off" placeholder="Name"><br>
+            
+                <label for="email" id="email-label">Email </label>
+                <input type="email" id="email" autocomplete="off" placeholder="Email"><br>
+            
+                <label for="number" id="number-label">Age </label>
+                <input type="number" id="number" autocomplete="off" min="10" max="110" placeholder="Age"><br>
+            
+                <label for="guinea-pigs" id="guinea-label">Do you like guinea pigs? </label>
+                <input type="radio" id="guinea-yes" name="choice" value="yes" checked>Yes
+                <input type="radio" id="guinea-no" name="choice" value="no"> No<br>
+            
+                <label for="guinea-pigs-choice" id="guinea-choice-label">Which Guinea Pig is your favorite? </label>
+                <select name="guinea-pigs-choice">
+                    <option value="pip">Pip</option>
+                    <option value="alfie">Alfie</option>
+                    <option value="ms-universe">Ms Universe</option>
+                    <option value="biggie">Notorious Big</option>
+                    <option value="all">Stupid question. All of them.</option>
+
+                </select> <br>
+
+                <label for="checkbox">Check the boxes! </label>
+                    <input type="checkbox" name="boxes" value="BoxOne">This is box one
+                    <input type="checkbox" name="boxes" value="BoxTwo">This is box two
+                    <input type="checkbox" name="boxes" value="BoxThree">This is box three<br>
+
+                <label for="text-area">Tell me something I don't know </label>
+                <textarea name="comment" rows="3">Type, type, type</textarea><br>
+
+            <div id="button-div">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    </body>
+</html>

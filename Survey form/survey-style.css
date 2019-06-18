@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mada:300&display=swap');
+
+
+body {
+    font-family: 'Mada', sans-serif;
+    background-color: rgba(178, 223, 219,1.0);
+}
+
+h1 {
+    font-family: 'La Belle Aurore', cursive;
+    text-align: center;
+    margin: 40px 0px 10px 0px;
+    padding-top: 5%;
+}
+
+p {
+    text-align: center;
+}
+
+#form-div {
+    background-color: #fff;
+    width: 95%;
+    margin: auto;
+    border-radius: 2px;
+}
+
+form {
+    width: 50%;
+    margin: 2% 25%;;
+}
+
+
+label {
+    display: flex;
+    padding: 30px 0px 10px 0px;;
+    font-weight: bold;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+textarea,
+select {
+    width: 100%;
+    resize: none;
+    padding: 10px 5px;
+    border-radius: 2px;
+    font-family: 'Mada', sans-serif;
+    border: none;
+    box-shadow: 0 0 2px #000;
+}
+
+#submit {
+    width: 20%;
+    padding: 5px;
+    margin: 5% 0%;
+    background-color: lightsalmon;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Mada', sans-serif;
+    border: none;
+    box-shadow: 0 0 2px #000;
+}
+
+#button-div {
+    text-align: center;
+}
