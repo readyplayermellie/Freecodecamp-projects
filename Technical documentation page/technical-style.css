@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap');
+
+body {
+    display: flex;
+    margin: 40px;
+}
+
+header {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#main-doc {
+    margin-left: 20px;
+}
+
+.main-section {
+    margin-bottom: 50px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#navbar a {
+    padding: 5px 0px 5px 5px;
+    margin: 5px 0px 5px 0px;
+}
+
+#navbar header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+#navbar a,
+p,
+li {
+    font-size: 16px;
+    font-family: 'Pontano Sans', sans-serif;
+    line-height: 1.6;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black
+}
+
+#navbar a:hover {
+    background-color: lightgrey;
+}
+
+.top-icon {
+    height: 10px;
+}
+
+.link-fandom {
+    font-variant: small-caps;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
