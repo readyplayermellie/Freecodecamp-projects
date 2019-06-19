@@ -1,34 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Swanky+and+Moo+Moo&display=swap');
 
-
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
+    height: 100vh;
     font-family: 'Nunito', sans-serif;
     line-height: 1.6;
     background-color: #BCE7FD;
-}
 
-h1 {
-    font-family: 'Swanky and Moo Moo', cursive;
-    font-size: 42px;
-    padding-top: 150px;
-    color: #BCE7FD;
-}
-
-#welcome-section {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background-color: #DB2763;
-    margin: auto;
-    text-align: center;
-}
-
-#welcome-section p {
-    color: #BCE7FD;
-    width: 450px;
-    margin: 0 auto;
 }
 
 a {
@@ -38,16 +19,60 @@ a {
 
 #navbar {
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #BCE7FD;
 }
 
 #navbar a {
-    margin: 10px 30px 10px 20px;
+    margin: 20px 30px 20px 20px;
+}
+
+#welcome-section {
+    top: 0;
+    left: 0;
+    padding-top: 0px;
+    margin-top: 0px;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    border-bottom: 1px #C492B1 solid;
+}
+
+#welcome-div {
+    width: 600px;
+    height: 600px;
+}
+
+#welcome-div p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#welcome-div {
+    border-radius: 50%;
+    background-color: #DB2763;
+    color: #BCE7FD;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-size: 42px;
+    color: #BCE7FD;
 }
 
 #learn-more-button {
-    padding: 8px;
-    background-color: #12EAEA;
+    padding: 8px 12px 8px 12px;
+    background-color: #BCE7FD;
     border-radius: 2px;
     border: none;
     font-family: 'Nunito', sans-serif;
@@ -55,4 +80,117 @@ a {
     font-size: 16px;
     color: #DB2763;
     margin-top: 30px;
+}
+
+#melanie {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px #C492B1 solid;
+
+}
+
+#professional-melanie,
+#personal-melanie {
+    width: 550px;
+    height: 500px;
+    margin: 50px;
+    margin-top:130px;
+    margin-bottom: 130px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5%;
+    
+}
+
+h2, 
+#melanie p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #DB2763;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 10px;
+}
+
+h2 {
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-size: 42px;
+}
+
+.icon {
+    height: 75px;
+    margin: 10px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    border-bottom: 1px #C492B1 solid;
+
+}
+
+#projects h2 {
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+#tiles-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-tile {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(219, 39, 99);
+    border-radius: 50%;
+    margin: 40px;
+    margin-left: 60px;
+    margin-bottom: 120px;
+}
+
+.tile-links p {
+    color:#BCE7FD;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.tile-links p:hover {
+    font-weight: bold;
+}
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 120px;
+}
+
+#contact h2 {
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.social-icon {
+    height: 40px;
+    margin: 20px;
+    margin-bottom: 100px;
+    
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 }
